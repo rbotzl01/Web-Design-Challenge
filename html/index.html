@@ -1,18 +1,85 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
+<title>Visualization Dashboard</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="styles.css">
 <body>
+
+<head>
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn">Navigation</button>
+  <div class="dropdown-content">
+  <a href="#">Main Page</a>
+  <a href="#">Temperature</a>
+  <a href="#">Humidity</a>
+  <a href="#">Cloudiness</a>
+  <a href="#">Wind Speed</a>
+  <a href="#">All Plots</a>
+  <a href="#">City Weather Data</a>
+  </div>
+</div>
+</head>
+
+
+
 
 <h1>Visualization Dashboard</h1>
 
 <!-- Sidebar -->
 <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
   <h3 class="w3-bar-item">Menu</h3>
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button"> <img alt="Temp Plot" src="C:\Users\ryan.botzler\Downloads\NewZip\Homework\11-Web\visualizations\Fig1.png" width=150 height=70></a>
+   <p>1/5/2017 Temperature</p>
+  <a href="#" class="w3-bar-item w3-button"> <img alt="Hum Plot" src="C:\Users\ryan.botzler\Downloads\NewZip\Homework\11-Web\visualizations\Fig2.png" width=150 height=70></a>
+   <p>1/5/2017 Humidity</p>
+    <a href="#" class="w3-bar-item w3-button"> <img alt="Cloud Plot" src="C:\Users\ryan.botzler\Downloads\NewZip\Homework\11-Web\visualizations\Fig3.png" width=150 height=70></a>
+   <p>1/5/2017 Cloudiness</p>
+    <a href="#" class="w3-bar-item w3-button"> <img alt="Wind Plot" src="C:\Users\ryan.botzler\Downloads\NewZip\Homework\11-Web\visualizations\Fig4.png" width=150 height=70></a>
+   <p>1/5/2017 Wind Speed</p>
+  <a href="#" class="w3-bar-item w3-button">1/5/2017 All Plots</a>
+  <a href="#" class="w3-bar-item w3-button">6/13/2018 City Weather Data</a>
 </div>
 
 <!-- Page Content -->
@@ -67,4 +134,3 @@
 
 </body>
 </html>
-<-- s -->
